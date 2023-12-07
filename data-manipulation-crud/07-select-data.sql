@@ -1,5 +1,6 @@
-SELECT date_created,
+SELECT
+  date_created,
   customer_name,
   product_name,
-  volume
+  volume / 1000 AS total_sales
 FROM sales;
