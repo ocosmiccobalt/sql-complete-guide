@@ -12,7 +12,9 @@ CREATE TABLE users (
   first_name VARCHAR(300) NOT NULL,
   last_name VARCHAR(300) NOT NULL,
   email VARCHAR(300) NOT NULL,
-  address_id INT REFERENCES addresses (id) ON DELETE RESTRICT
+  address_id INT, -- MySQl
+  FOREIGN KEY (address_id) REFERENCES addresses (id) ON DELETE RESTRICT -- MySQl
+  -- address_id INT REFERENCES addresses (id) ON DELETE RESTRICT -- Postgresql
 );
 
 CREATE TABLE cities (
