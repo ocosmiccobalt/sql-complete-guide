@@ -14,9 +14,11 @@ CREATE TABLE users (
   email VARCHAR(300) NOT NULL,
   address_id INT, -- MySQl
   -- FOREIGN KEY (address_id) REFERENCES addresses (id) ON DELETE RESTRICT -- MySQl
-  FOREIGN KEY (address_id) REFERENCES addresses (id) -- MySQl NO ACTION
+  -- FOREIGN KEY (address_id) REFERENCES addresses (id) -- MySQl NO ACTION
+  FOREIGN KEY (address_id) REFERENCES addresses (id) ON DELETE CASCADE -- MySQl
   -- address_id INT REFERENCES addresses (id) ON DELETE RESTRICT -- Postgresql
   -- address_id INT REFERENCES addresses (id) -- Postgresql NO ACTION
+  -- address_id INT REFERENCES addresses (id) ON DELETE CASCADE -- Postgresql
 );
 
 CREATE TABLE cities (
