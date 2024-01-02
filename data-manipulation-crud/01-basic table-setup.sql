@@ -1,8 +1,8 @@
 -- CREATE DATABASE sales_example;
 
 CREATE TABLE sales (
-  -- id INT PRIMARY KEY AUTO_INCREMENT, -- MySQl
-  id SERIAL PRIMARY KEY, -- Postgres
+  -- id INT PRIMARY KEY AUTO_INCREMENT, -- MySQL
+  id SERIAL PRIMARY KEY, -- Postgresql
   date_created DATE DEFAULT (CURRENT_DATE),
   date_fulfilled DATE,
   customer_name VARCHAR(300) NOT NULL,

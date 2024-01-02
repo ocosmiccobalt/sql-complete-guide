@@ -5,7 +5,7 @@ DROP TABLE conversations;
 -- CREATE TYPE employment_status AS ENUM('employed', 'self-employed', 'unemployed'); -- Postgresql
 
 CREATE TABLE users (
-  -- id SERIAL PRIMARY KEY, --Postgres
+  -- id SERIAL PRIMARY KEY, --Postgresql
   id INT PRIMARY KEY AUTO_INCREMENT, -- MySQL
   first_name VARCHAR(200) NOT NULL,
   last_name VARCHAR(200) NOT NULL,
@@ -17,7 +17,7 @@ CREATE TABLE users (
 );
 
 CREATE TABLE employers (
-  -- id SERIAL PRIMARY KEY, --Postgres
+  -- id SERIAL PRIMARY KEY, --Postgresql
   id INT PRIMARY KEY AUTO_INCREMENT, -- MySQL
   company_name VARCHAR(300) NOT NULL,
   company_address VARCHAR(300) NOT NULL,
@@ -26,7 +26,7 @@ CREATE TABLE employers (
 );
 
 CREATE TABLE conversations (
-  -- id SERIAL PRIMARY KEY, --Postgres
+  -- id SERIAL PRIMARY KEY, --Postgresql
   id INT PRIMARY KEY AUTO_INCREMENT, -- MySQL
   user_id INT,
   employer_id INT,

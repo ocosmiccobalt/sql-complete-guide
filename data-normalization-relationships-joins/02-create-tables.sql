@@ -1,5 +1,5 @@
 CREATE TABLE users (
-  id INT PRIMARY KEY AUTO_INCREMENT, -- MySQl
+  id INT PRIMARY KEY AUTO_INCREMENT, -- MySQL
   -- id SERIAL PRIMARY KEY, -- Postgresql
   first_name VARCHAR(300) NOT NULL,
   last_name VARCHAR(300) NOT NULL,
@@ -9,7 +9,7 @@ CREATE TABLE users (
 
 CREATE TABLE addresses (
   id INT PRIMARY KEY AUTO_INCREMENT, -- MySQL
-  -- id SERIAL PRIMARY KEY, -- Posrgresql
+  -- id SERIAL PRIMARY KEY, -- Postgresql
   street VARCHAR(300) NOT NULL,
   house_number VARCHAR(50) NOT NULL,
   city_id INT NOT NULL

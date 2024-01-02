@@ -25,7 +25,7 @@ VALUES (
 
 -- Task 5: Add constraints
 
--- MySQl:
+-- MySQL:
 ALTER TABLE products
 MODIFY COLUMN name VARCHAR(200) NOT NULL,
 MODIFY COLUMN price NUMERIC(10,2) NOT NULL CHECK (price > 0),

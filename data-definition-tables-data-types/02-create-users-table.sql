@@ -1,4 +1,4 @@
--- Postgres + ENUM => We have te create a custom type first
+-- Postgresql + ENUM => We have te create a custom type first
 CREATE TYPE employment_status AS ENUM('employed', 'self-employed', 'unemployed');
 
 CREATE TABLE users (
