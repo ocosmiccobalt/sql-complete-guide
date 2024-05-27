@@ -4,7 +4,7 @@ INSERT INTO customers(
   email
 )
 VALUES(
-  'Maria',
-  'Jones',
-  'maria@test.com'
+  'Jonas',
+  'Black',
+  'jonas@test.com'
 );

@@ -3,5 +3,6 @@ INSERT INTO orders(
   customer_id
 )
 VALUES(
-  103.12
+  103.12,
+  8
 );
