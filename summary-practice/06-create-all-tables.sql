@@ -44,7 +44,6 @@ CREATE TABLE events_users (
   user_id INT, -- MySQL
   FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE, -- MySQL
   -- user_id INT REFERENCES users ON DELETE CASCADE, -- Postgresql
-  CHECK (event_id < user_id),
   PRIMARY KEY (event_id, user_id)
 );
 
